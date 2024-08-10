@@ -12,8 +12,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: githubaction.eyggq.mongodb.net
-      MONGODB_USERNAME: shanbukhari
-      MONGODB_PASSWORD: rVh6Gx2wzvcNTQBp
+      MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
